@@ -10,6 +10,7 @@ Execute this command (you might need to add executable permissions (`chmod +x bu
 ./build.sh
 ```
 This will compile the code with the resulting executable in `main`
+
 Execute this command to execute the program
 ```
 ./main
@@ -24,3 +25,7 @@ And then to execute the program
 ```
 ./main
 ```
+# Known Quirks
+Any non-numeric character except LF will be treated as if its numeric value is the ascii offset from ascii '0'.
+
+For example 'A' has a value of 17 and 'a' has a value of 49.
